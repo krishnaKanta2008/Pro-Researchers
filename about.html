@@ -29,6 +29,178 @@
 
 
     <link rel="stylesheet" href="https://use.typekit.net/iqm6zrc.css">
+
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css” />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="/static/css/bootstrap-icons.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/boxicons.min.css" rel="stylesheet">
+    <link href="/static/css/quill.bubble.css" rel="stylesheet">
+    <link href="/static/css/quill.snow.css" rel="stylesheet">
+    <link href="/static/css/remixicon.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style id='safe-svg-svg-icon-style-inline-css'>
+        .safe-svg-cover {
+            text-align: center
+        }
+
+        .safe-svg-cover .safe-svg-inside {
+            display: inline-block;
+            max-width: 100%
+        }
+
+        .safe-svg-cover svg {
+            height: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            width: 100%
+        }
+    </style>
+    <style id='classic-theme-styles-inline-css'>
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css'>
+    </style>
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #343a40;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -ms-overflow-style: none;
+            background-color: #adb5bd;
+            border-radius: 25px;
+            border: 3px #dee2e6;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <style>
+        .teams .title::after {
+            content: "";
+        }
+
+        .teams .carousel .card {
+            background: #222;
+            border-radius: 6px;
+            padding: 25px 35px;
+            text-align: center;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .teams .carousel .card:hover {
+            background: rgba(164, 161, 161, 0);
+        }
+
+        .teams .carousel .card .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .teams .carousel .card:hover .box {
+            transform: scale(1.05);
+        }
+
+        .teams .carousel .card .text {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 10px 0 7px 0;
+        }
+
+        .teams .carousel .card img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgb(46, 77, 248);
+            transition: all 0.3s ease;
+        }
+
+        .teams .carousel .card:hover img {
+            border-color: #fff;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .owl-dot {
+            height: 13px;
+            width: 13px;
+            margin: 0 5px;
+            outline: none !important;
+            border-radius: 50%;
+            border: 2px solid rgb(46, 77, 248) !important;
+            transition: all 0.3s ease;
+        }
+
+        .owl-dot.active {
+            width: 35px;
+            border-radius: 14px;
+        }
+
+        .owl-dot.active,
+        .owl-dot:hover {
+            background: rgb(46, 77, 248) !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #343a40;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -ms-overflow-style: none;
+            background-color: #adb5bd;
+            border-radius: 25px;
+            border: 3px #dee2e6;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+    </style>
+
+
 </head>
 
 <body
@@ -74,78 +246,387 @@
 
                         </div>
                     </div>
-                    <div id="lista-czlonkow-zespolu" class="tm-default-list">
-                        <div class="tm-default-block"><a href="https://gabriela.bar/en/team/dr-hab-michal-bernaczyk/"
-                                class="sfp-thumb" rel="nofollow"><img width="640" height="768"
-                                    src="./images/image1.jpg"
-                                    class="attachment-tm-fav size-tm-fav wp-post-image"
-                                    sizes="(max-width: 640px) 100vw, 640px" /></a>
-                            <a href="https://gabriela.bar/en/team/dr-hab-michal-bernaczyk/"
-                                class="bordered-btn tms-override">
-                                <aside></aside><span>Krishna Kanta Bera</span>
-                            </a><span class="tm-job">Developer</span>
+                    <section class="teams" id="teams">
+                        <div class="max-width">
+                            <div class="carousel owl-carousel">
+
+                                <!-- 1st card -->
+
+                                <div class="card">
+                                    <div class="box">
+                                        <img src="/images/image1.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Krishna kanta bera</h4>
+                                        </div>
+                                        <p>
+                                        <h4>Developer | Backend | Author</h4>
+                                        <div class="social-links mt-2">
+                                            <a href="" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                            <a href="" class="instagram" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <h5 class="card-title">Profile Details</h5>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;">Krishna kanta
+                                                    bera</div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;"></div>
+                                                <br>
+                                                <div class="col-lg-9 col-md-8">
+
+                                                    <div class="col-lg-9 col-md-8" style="font-size: 14px;">Barrackpore
+                                                        W.B</div>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Phone:-
+                                                    (+91)70441 35575</div>
+                                                <div class="col-lg-9 col-md-8">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Email:-
+                                                    <b><a href="kb0397206@gmail.com"
+                                                            style="color:rgb(252, 246, 246)">kb0397206@gmail.com</a>
+                                                </div>
+                                                <div class="col-lg-9 col-md-8">
+                                                    <h5></b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 2nd card -->
+
+                                <div class="card">
+                                    <div class="box">
+                                        <img src="/images" alt="">
+                                        <div class="text">
+                                            <h4>Naman Dwivedi</h4>
+                                        </div>
+                                        <p>
+                                        <h3>Leader | Author</h3>
+                                        <div class="social-links mt-2">
+                                            <a href="" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                            <a href="" class="instagram" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <h5 class="card-title">Profile Details</h5>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;">Naman Dwivedi</div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;"></div>
+                                                <br>
+                                                <div class="col-lg-9 col-md-8">
+
+                                                    <div class="col-lg-9 col-md-8" style="font-size: 14px;">Barrackpore
+                                                        W.B</div>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Phone:-
+                                                    (+91)70196 90016</div>
+                                                <div class="col-lg-9 col-md-8">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Email:-
+                                                    <b><a href="kb0397206@gmail.com"
+                                                            style="color:rgb(252, 246, 246)">kb0397206@gmail.com</a>
+                                                </div>
+                                                <div class="col-lg-9 col-md-8">
+                                                    <h5></b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 3rd card -->
+
+                                <div class="card">
+                                    <div class="box">
+                                        <img src="/images/WhatsApp Image 2024-07-23 at 21.34.31_94f0049e.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Protham Roy</h4>
+                                        </div>
+                                        <p>
+                                        <h3>Author</h3>
+                                        <div class="social-links mt-2">
+                                            <a href="" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                            <a href="" class="instagram" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <h5 class="card-title">Profile Details</h5>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;">Protham Roy</div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;"></div>
+                                                <br>
+                                                <div class="col-lg-9 col-md-8">
+
+                                                    <div class="col-lg-9 col-md-8" style="font-size: 14px;">Barrackpore
+                                                        W.B</div>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Phone:-
+                                                    (+91)6289 379 070</div>
+                                                <div class="col-lg-9 col-md-8">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Email:-
+                                                    <b><a href="kb0397206@gmail.com"
+                                                            style="color:rgb(252, 246, 246)">kb0397206@gmail.com</a>
+                                                </div>
+                                                <div class="col-lg-9 col-md-8">
+                                                    <h5></b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 4th card -->
+
+                                <div class="card">
+                                    <div class="box">
+                                        <img src="/images/WhatsApp Image 2024-07-23 at 21.36.21_cb9cf825.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Spandan Saha</h4>
+                                        </div>
+                                        <p>
+                                        <h3>Designer</h3>
+                                        <div class="social-links mt-2">
+                                            <a href="" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                            <a href="" class="instagram" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <h5 class="card-title">Profile Details</h5>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;">Spandan Saha</div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;"></div>
+                                                <br>
+                                                <div class="col-lg-9 col-md-8">
+
+                                                    <div class="col-lg-9 col-md-8" style="font-size: 14px;">Barrackpore
+                                                        W.B</div>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Phone:-
+                                                    (+91)91829 00943</div>
+                                                <div class="col-lg-9 col-md-8">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Email:-
+                                                    <b><a href="kb0397206@gmail.com"
+                                                            style="color:rgb(252, 246, 246)">kb0397206@gmail.com</a>
+                                                </div>
+                                                <div class="col-lg-9 col-md-8">
+                                                    <h5></b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 5th card -->
+
+                                <div class="card">
+                                    <div class="box">
+                                        <img src="/images/" alt="">
+                                        <div class="text">
+                                            <h4>Pranjal Dab</h4>
+                                        </div>
+                                        <p>
+                                        <h3>Author</h3>
+                                        <div class="social-links mt-2">
+                                            <a href="" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                            <a href="" class="instagram" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <h5 class="card-title">Profile Details</h5>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;">Pranjal Dab</div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;"></div>
+                                                <br>
+                                                <div class="col-lg-9 col-md-8">
+
+                                                    <div class="col-lg-9 col-md-8" style="font-size: 14px;">Barrackpore
+                                                        W.B</div>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Phone:-
+                                                    (+91)70441 35575</div>
+                                                <div class="col-lg-9 col-md-8">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Email:-
+                                                    <b><a href="kb0397206@gmail.com"
+                                                            style="color:rgb(252, 246, 246)">kb0397206@gmail.com</a>
+                                                </div>
+                                                <div class="col-lg-9 col-md-8">
+                                                    <h5></b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 6th card -->
+
+                                <div class="card">
+                                    <div class="box">
+                                        <img src="/images/" alt="">
+                                        <div class="text">
+                                            <h4>Sanchit</h4>
+                                        </div>
+                                        <p>
+                                        <h3>Author</h3>
+                                        <div class="social-links mt-2">
+                                            <a href="" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                            <a href="" class="instagram" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                            <a href="" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            <a href="" class="linkedin" target="_blank"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                        </div>
+                                        <div class="col-xl-8">
+                                            <h5 class="card-title">Profile Details</h5>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;">Sanchit</div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-9 col-md-8" style="font-size: 14px;"></div>
+                                                <br>
+                                                <div class="col-lg-9 col-md-8">
+
+                                                    <div class="col-lg-9 col-md-8" style="font-size: 14px;">Barrackpore
+                                                        W.B</div>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Phone:-
+                                                    (+91)70441 35575</div>
+                                                <div class="col-lg-9 col-md-8">
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-4 label" style="font-size: 15px;">Email:-
+                                                    <b><a href="kb0397206@gmail.com"
+                                                            style="color:rgb(252, 246, 246)">kb0397206@gmail.com</a>
+                                                </div>
+                                                <div class="col-lg-9 col-md-8">
+                                                    <h5></b>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tm-default-block"><a href="https://gabriela.bar/en/team/aleksandra-golda/"
-                                class="sfp-thumb" rel="nofollow"><img width="640" height="768"
-                                    src="https://gabriela.bar/wp-content/uploads/2024/03/aleksandra-golda-1.jpg"
-                                    class="attachment-tm-fav size-tm-fav wp-post-image" alt="" decoding="async"
-                                    srcset="https://gabriela.bar/wp-content/uploads/2024/03/aleksandra-golda-1.jpg?_mod=1711714206 640w, https://gabriela.bar/wp-content/uploads/2024/03/aleksandra-golda-1-250x300.jpg?_mod=1711714206 250w"
-                                    sizes="(max-width: 640px) 100vw, 640px" /><svg
-                                    data-src="https://gabriela.bar/wp-content/themes/ts/assets/svg/more-icon.svg"
-                                    width="30" height="25"></svg></a>
-                            <a href="https://gabriela.bar/en/team/aleksandra-golda/" class="bordered-btn tms-override">
-                                <aside></aside><span>Aleksandra Gołda</span>
-                            </a><span class="tm-job">Legal Trainee</span>
-                        </div>
-                        <div class="tm-default-block"><a href="https://gabriela.bar/en/team/karolina-kisiel/"
-                                class="sfp-thumb" rel="nofollow"><img width="640" height="768"
-                                    src="https://gabriela.bar/wp-content/uploads/2024/03/karolina-kisiel.jpg"
-                                    class="attachment-tm-fav size-tm-fav wp-post-image" alt="" decoding="async"
-                                    srcset="https://gabriela.bar/wp-content/uploads/2024/03/karolina-kisiel.jpg?_mod=1711712136 640w, https://gabriela.bar/wp-content/uploads/2024/03/karolina-kisiel-250x300.jpg?_mod=1711712136 250w"
-                                    sizes="(max-width: 640px) 100vw, 640px" /><svg
-                                    data-src="https://gabriela.bar/wp-content/themes/ts/assets/svg/more-icon.svg"
-                                    width="30" height="25"></svg></a>
-                            <a href="https://gabriela.bar/en/team/karolina-kisiel/" class="bordered-btn tms-override">
-                                <aside></aside><span>Karolina Kisiel</span>
-                            </a><span class="tm-job">Attorney at&nbsp;Law, Expert in&nbsp;Business Consulting</span>
-                        </div>
-                        <div class="tm-default-block"><a href="https://gabriela.bar/en/team/izabela-sojewska/"
-                                class="sfp-thumb" rel="nofollow"><img width="640" height="768"
-                                    src="https://gabriela.bar/wp-content/uploads/2024/03/kadr_izabela_sojewska_mmf_1679.jpg"
-                                    class="attachment-tm-fav size-tm-fav wp-post-image" alt="" decoding="async"
-                                    srcset="https://gabriela.bar/wp-content/uploads/2024/03/kadr_izabela_sojewska_mmf_1679.jpg?_mod=1711709470 640w, https://gabriela.bar/wp-content/uploads/2024/03/kadr_izabela_sojewska_mmf_1679-250x300.jpg?_mod=1711709470 250w"
-                                    sizes="(max-width: 640px) 100vw, 640px" /><svg
-                                    data-src="https://gabriela.bar/wp-content/themes/ts/assets/svg/more-icon.svg"
-                                    width="30" height="25"></svg></a>
-                            <a href="https://gabriela.bar/en/team/izabela-sojewska/" class="bordered-btn tms-override">
-                                <aside></aside><span>Izabela Sojewska</span>
-                            </a><span class="tm-job">Legal Trainee</span>
-                        </div>
-                        <div class="tm-default-block"><a href="https://gabriela.bar/en/team/anna-augustyn/"
-                                class="sfp-thumb" rel="nofollow"><img width="640" height="768"
-                                    src="https://gabriela.bar/wp-content/uploads/2024/03/kadr_ania_augustyn_mmf_1760.jpg"
-                                    class="attachment-tm-fav size-tm-fav wp-post-image" alt="" decoding="async"
-                                    srcset="https://gabriela.bar/wp-content/uploads/2024/03/kadr_ania_augustyn_mmf_1760.jpg?_mod=1711709068 640w, https://gabriela.bar/wp-content/uploads/2024/03/kadr_ania_augustyn_mmf_1760-250x300.jpg?_mod=1711709068 250w"
-                                    sizes="(max-width: 640px) 100vw, 640px" /><svg
-                                    data-src="https://gabriela.bar/wp-content/themes/ts/assets/svg/more-icon.svg"
-                                    width="30" height="25"></svg></a>
-                            <a href="https://gabriela.bar/en/team/anna-augustyn/" class="bordered-btn tms-override">
-                                <aside></aside><span>Anna Augustyn</span>
-                            </a><span class="tm-job">Attorney at&nbsp;Law, Art Historian, <br>Of Counsel</span>
-                        </div>
-                        <div class="tm-default-block"><a href="https://gabriela.bar/en/team/elzbieta-walczak/"
-                                class="sfp-thumb" rel="nofollow"><img width="640" height="768"
-                                    src="https://gabriela.bar/wp-content/uploads/2024/03/kadr_ela_walczak_mmf_1520.jpg"
-                                    class="attachment-tm-fav size-tm-fav wp-post-image" alt="" decoding="async"
-                                    srcset="https://gabriela.bar/wp-content/uploads/2024/03/kadr_ela_walczak_mmf_1520.jpg?_mod=1711709243 640w, https://gabriela.bar/wp-content/uploads/2024/03/kadr_ela_walczak_mmf_1520-250x300.jpg?_mod=1711709243 250w"
-                                    sizes="(max-width: 640px) 100vw, 640px" /><svg
-                                    data-src="https://gabriela.bar/wp-content/themes/ts/assets/svg/more-icon.svg"
-                                    width="30" height="25"></svg></a>
-                            <a href="https://gabriela.bar/en/team/elzbieta-walczak/" class="bordered-btn tms-override">
-                                <aside></aside><span>Elżbieta Walczak</span>
-                            </a><span class="tm-job">Office Manager</span>
-                        </div>
-                    </div>
+                    </section>
+
+
                 </div>
             </section>
         </main>
@@ -195,6 +676,31 @@
         id="tsparticles-all-js"></script>
     <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/tsparticles-init.js"
         id="tsparticles-loader-js"></script>
+
+    <script>
+        $('.carousel').owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    </script>
+
 
 </body>
 
