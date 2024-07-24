@@ -33,7 +33,23 @@
                 display: none;
             }
         }
+
+        .default-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        @media (max-width: 768px) {
+
+            /* Adjust the breakpoint as needed */
+            .default-posts-grid {
+                grid-template-columns: 1fr;
+                /* Falls back to single column on smaller screens */
+            }
+        }
     </style>
+
     <link rel="stylesheet" href="https://use.typekit.net/iqm6zrc.css">
 
 </head>
@@ -54,7 +70,6 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
                                         <a href="./index.html"><span>Home</span></a>
                                     </li>
-
                                     <li id="menu-item-628"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628">
                                         <a href="./blogs.html"><span>Blogs</span></a>
@@ -67,7 +82,6 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
                                         <a href="./about.html"><span>About Us</span></a>
                                     </li>
-
 
                                 </ul>
                             </div>
@@ -107,8 +121,7 @@
                         <div class="default-posts-grid single-spec-on-page">
                             <a href="./blogs/Regulate-the-use-of-generative-ai-in-education.html"
                                 class="default-post-listing-block">
-                                <picture><img width="640" height="344"
-                                        src="./images/blogs-img/img4.jpg"
+                                <picture><img width="640" height="344" src="./images/blogs-img/img4.jpg"
                                         class="post-listing wp-post-image" alt="" decoding="async"
                                         fetchpriority="high" />
                                 </picture>
@@ -129,7 +142,25 @@
                                         class="post-listing wp-post-image" alt="" decoding="async"
                                         fetchpriority="high" />
                                 </picture>
-                                <div class="rbps-meta"><span class="rbps-title">How can technology improve student engagement?</span>
+                                <div class="rbps-meta"><span class="rbps-title">How can technology improve student
+                                        engagement?</span>
+                                    <aside>
+                                        <div class="rbps-sub-row"><span class="post-type">Author</span></div>
+                                        <div class="rbps-sub-row"><span>Krishna kanta bera</span></div>
+                                    </aside>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="default-posts-grid single-spec-on-page">
+                            <a href="./blogs/Top-Tips-To-Score-The-Highest-Marks.html"
+                                class="default-post-listing-block">
+                                <picture><img width="640" height="344"
+                                        src="https://gabriela.bar/wp-content/uploads/2024/01/circle-5090539_1280-640x344.jpg"
+                                        class="post-listing wp-post-image" alt="" decoding="async"
+                                        fetchpriority="high" />
+                                </picture>
+                                <div class="rbps-meta"><span class="rbps-title">Top Tips To Score The Highest
+                                        Marks</span>
                                     <aside>
                                         <div class="rbps-sub-row"><span class="post-type">Author</span></div>
                                         <div class="rbps-sub-row"><span>Krishna kanta bera</span></div>
