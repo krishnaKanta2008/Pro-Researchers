@@ -5,20 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pro-Researchers</title>
-    <link rel='stylesheet' id='wp-gmap-embed-front-css-css'
+    <link rel='stylesheet'
         href='https://gabriela.bar/wp-content/plugins/gmap-embed/public/assets/css/front_custom_style.css?ver=1710255116'
         media='all' />
-    <link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css'
+    <link rel='stylesheet'
         href='https://gabriela.bar/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1'
         media='all' />
-    <link rel='stylesheet' id='ts-style-css' href='https://gabriela.bar/wp-content/themes/ts/style.css?ver=1.0.0' />
-    <link rel='stylesheet' id='wg-css-css' href='https://gabriela.bar/wp-content/themes/ts/wg.css?ver=1.12'
-        media='all' />
-    <link rel='stylesheet' id='responsive-767-css'
-        href='https://gabriela.bar/wp-content/themes/ts/responsive-767.css?ver=1.12' media='all' />
-    <link rel='stylesheet' id='responsive-1024-css'
-        href='https://gabriela.bar/wp-content/themes/ts/responsive-1024.css?ver=1.12' media='all' />
-
+    <link rel='stylesheet' href='https://gabriela.bar/wp-content/themes/ts/style.css?ver=1.0.0' />
+    <link rel='stylesheet' href='https://gabriela.bar/wp-content/themes/ts/wg.css?ver=1.12' media='all' />
+    <link rel='stylesheet' href='https://gabriela.bar/wp-content/themes/ts/responsive-767.css?ver=1.12' media='all' />
+    <link rel='stylesheet' href='https://gabriela.bar/wp-content/themes/ts/responsive-1024.css?ver=1.12' media='all' />
     <link rel="https://api.w.org/" href="https://gabriela.bar/en/wp-json/" />
     <link rel="alternate" type="application/json" href="https://gabriela.bar/en/wp-json/wp/v2/pages/560" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gabriela.bar/xmlrpc.php?rsd" />
@@ -37,21 +33,64 @@
         .default-posts-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-
         }
 
         @media (max-width: 768px) {
-
-            /* Adjust the breakpoint as needed */
             .default-posts-grid {
                 grid-template-columns: 1fr;
-                /* Falls back to single column on smaller screens */
             }
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .mySlides1,
+        .mySlides2,
+        .mySlides3 {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
     </style>
 
     <link rel="stylesheet" href="https://use.typekit.net/iqm6zrc.css">
-
 </head>
 
 <body
@@ -59,35 +98,24 @@
     <div id="top" class="site">
         <header id="masthead" class="site-header">
             <div class="container">
-                <div class="row row-wrap stack-between row-header"><a href="./" class="custom-logo-link" rel="home">
+                <div class="row row-wrap stack-between row-header">
+                    <a href="./" class="custom-logo-link" rel="home">
                         <h1 style="color: white;">Pro-Researchers</h1>
                     </a>
                     <div class="header-rightpart">
                         <nav id="nawigacja-glowna" class="main-navigation">
                             <div class="menu-menu-en-container">
                                 <ul id="primary-menu" class="menu">
-                                    <li id="menu-item-629"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
-                                        <a href="./index.html"><span>Home</span></a>
-                                    </li>
-                                    <li id="menu-item-628"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628">
-                                        <a href="./blogs.html"><span>Blogs</span></a>
-                                    </li>
-                                    <li id="menu-item-627"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
-                                        <a href="./FAQs.html"><span>FAQs</span></a>
-                                    </li>
-                                    <li id="menu-item-626"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
-                                        <a href="./about.html"><span>About Us</span></a>
-                                    </li>
-
+                                    <li class="menu-item"><a href="./index.html"><span>Home</span></a></li>
+                                    <li class="menu-item"><a href="./blogs.html"><span>Blogs</span></a></li>
+                                    <li class="menu-item"><a href="./FAQs.html"><span>FAQs</span></a></li>
+                                    <li class="menu-item"><a href="./about.html"><span>About Us</span></a></li>
                                 </ul>
                             </div>
                         </nav>
-
-                        <div id="nav-icon1" class="hide-desktop hide-tablet mobile-menu"> <span></span> <span></span>
+                        <div id="nav-icon1" class="hide-desktop hide-tablet mobile-menu">
+                            <span></span>
+                            <span></span>
                             <span></span>
                         </div>
                     </div>
@@ -95,85 +123,98 @@
             </div>
         </header>
         <main id="primary" class="site-main">
-            <section id="naglowek" class="specs-listing-intro">
-                <div id="tsparticles"></div>
+            <section id="zespol" class="team-wrapper">
+                <div class="container" style="margin-top: 32rem;"></div>
             </section>
             <section id="lista-specjalizacji" class="specs-listing-main">
                 <div class="container">
                     <h1 class="section-header specs-header">All Blogs</h1>
 
-                    <div class="flex-container">
-                        <div class="default-posts-grid single-spec-on-page">
-                            <a href="./blogs/Digital-Learning-Transformation.html" class="default-post-listing-block">
-                                <picture><img width="640" height="344" src="./images/blogs-img/img1.jpg"
-                                        class="post-listing wp-post-image" alt="" decoding="async"
-                                        fetchpriority="high" />
-                                </picture>
-                                <div class="rbps-meta"><span class="rbps-title">Digital
-                                        Learning Transformation</span>
-                                    <aside>
-                                        <div class="rbps-sub-row"><span class="post-type">Author</span></div>
-                                        <div class="rbps-sub-row"><span>Krishna kanta bera</span></div>
-                                    </aside>
-                                </div>
+                    <!-- Slideshow 1 -->
+                    <h1>Blogs on tech. in education :</h1>
+                    <div class="slideshow-container">
+                        <div class="mySlides1" style="text-align: center;">
+                            <a href="./blogs/How-can-technology-improve-student-engagement.html">
+                                <img src="./blogs/images/tch.-in-education.jpg" style="width: 80%; height: auto;">
+                                <p>How can technology improve student engagement?</p>
                             </a>
                         </div>
-                        <div class="default-posts-grid single-spec-on-page">
-                            <a href="./blogs/Regulate-the-use-of-generative-ai-in-education.html"
-                                class="default-post-listing-block">
-                                <picture><img width="640" height="344" src="./images/blogs-img/img4.jpg"
-                                        class="post-listing wp-post-image" alt="" decoding="async"
-                                        fetchpriority="high" />
-                                </picture>
-                                <div class="rbps-meta"><span class="rbps-title">Regulate the use of generative AI in
-                                        education</span>
-                                    <aside>
-                                        <div class="rbps-sub-row"><span class="post-type">Author</span></div>
-                                        <div class="rbps-sub-row"><span>Protham Roy</span></div>
-                                    </aside>
-                                </div>
+                        <div class="mySlides1" style="text-align: center;">
+                            <a href="./blogs/Tech-to-Mech-Education-and-its-future.html">
+                                <img src="./images/blogs-img/teacher-robot1.jpeg" style="width: 80%; height: auto;">
+                                <p>Tech to Mech - Education and its future</p>
                             </a>
                         </div>
-                        <div class="default-posts-grid single-spec-on-page">
-                            <a href="./blogs/How-can-technology-improve-student-engagement.html"
-                                class="default-post-listing-block">
-                                <picture><img width="640" height="344"
-                                        src="https://gabriela.bar/wp-content/uploads/2024/01/circle-5090539_1280-640x344.jpg"
-                                        class="post-listing wp-post-image" alt="" decoding="async"
-                                        fetchpriority="high" />
-                                </picture>
-                                <div class="rbps-meta"><span class="rbps-title">How can technology improve student
-                                        engagement?</span>
-                                    <aside>
-                                        <div class="rbps-sub-row"><span class="post-type">Author</span></div>
-                                        <div class="rbps-sub-row"><span>Krishna kanta bera</span></div>
-                                    </aside>
-                                </div>
+                        <div class="mySlides1" style="text-align: center;">
+                            <a href="./blogs/Regulate-the-use-of-generative-ai-in-education.html">
+                                <img src="./blogs/images/img20.jpg" style="width: 80%; height: auto;">
+                                <p>Regulate the use of generative AI in education</p>
                             </a>
                         </div>
-                        <div class="default-posts-grid single-spec-on-page">
-                            <a href="./blogs/Top-Tips-To-Score-The-Highest-Marks.html"
-                                class="default-post-listing-block">
-                                <picture><img width="640" height="344"
-                                        src="https://gabriela.bar/wp-content/uploads/2024/01/circle-5090539_1280-640x344.jpg"
-                                        class="post-listing wp-post-image" alt="" decoding="async"
-                                        fetchpriority="high" />
-                                </picture>
-                                <div class="rbps-meta"><span class="rbps-title">Top Tips To Score The Highest
-                                        Marks</span>
-                                    <aside>
-                                        <div class="rbps-sub-row"><span class="post-type">Author</span></div>
-                                        <div class="rbps-sub-row"><span>Krishna kanta bera</span></div>
-                                    </aside>
-                                </div>
+                        <div class="mySlides1" style="text-align: center;">
+                            <a href="./blogs/Digital-Learning-Transformation.html">
+                                <img src="./images/blogs-img/img5.jpg" style="width: 80%; height: auto;">
+                                <p>Digital Learning Transformation</p>
                             </a>
                         </div>
-                    </div>
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div><hr style="width: 80%;">
 
+                    <!-- Slideshow 2 -->
+                     <h1>You must know these things :</h1>
+                    <div class="slideshow-container">
+                        <div class="mySlides2" style="text-align: center;">
+                            <a href="./blogs/Top-Tips-To-Score-The-Highest-Marks.html">
+                                <img src="./blogs/images/EXAM.png" style="width: 80%; height: auto;">
+                                <p>Top Tips To Score The Highest Marks In Your Exams</p>
+                            </a>
+                        </div>
+                        <div class="mySlides2" style="text-align: center;">
+                            <a href="./blogs/5-tips-to-focus-on-your-education-and.html">
+                                <img src="./blogs/images/Modern-Education.png" style="width: 80%; height: auto;">
+                                <p>5 Tips To Focus On Your Education And Avoid Distraction | Motivate Yourself</p>
+                            </a>
+                        </div>
+                        <div class="mySlides2" style="text-align: center;">
+                            <a href="./blogs/The-success-of-modern-education-lies-in.html">
+                                <img src="./blogs/images/success1.png" style="width: 80%; height: auto;">
+                                <p>The Success Of Modern Education Lies In Inculcating Moral Education</p>
+                            </a>
+                        </div>
+                        <div class="mySlides2" style="text-align: center;">
+                            <a href="./blogs/Is-career-building-only-goal-of-education.html">
+                                <img src="./blogs/images/career1.png" style="width: 80%; height: auto;">
+                                <p>Is Career Building The Only Goal Of Education?</p>
+                            </a>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                    </div><hr style="width: 80%;">
+
+                    <!-- Slideshow 3 -->
+                     <h1>Computer science and tech :</h1>
+                    <div class="slideshow-container">
+                        <div class="mySlides3" style="text-align: center;">
+                            <a href="./blogs/Computer-Science-and-its-scope.html">
+                                <img src="./blogs/images/computer-science.jpeg" style="width: 80%; height: auto;">
+                                <p>Computer Science and its scope</p>
+                            </a>
+                        </div>
+                        <div class="mySlides3" style="text-align: center;">
+                            <a href="./blogs/Technology-and-its-daily-life-importance.html">
+                                <img src="./blogs/images/technology-life-easier.png" style="width: 80%; height: auto;">
+                                <p>Technology and its daily life importance</p>
+                            </a>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                    </div>
 
                 </div>
             </section>
         </main>
+        <hr style="width: 80%;">
         <footer id="colophon" class="site-footer">
             <div class="container">
                 <div class="row row-wrap stack-between row-footer">
@@ -181,50 +222,114 @@
                         <a href="./" class="custom-logo-link" rel="home" aria-current="page">
                             <h1 style="color: white;">Pro-Researchers</h1>
                         </a>
-
                     </div>
-
                     <div class="rightcol-menus-copyright">
                         <div class="row row-wrap columnize row-footer-menus">
                             <nav id="site-navigation-footer" class="main-navigation">
                                 <div class="menu-menu-en-container">
                                     <ul id="primary-menu-footer" class="menu">
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628">
-                                            <a href="./blogs.html"><span>Blogs</span></a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
-                                            <a href="./FAQs.html"><span>FAQs</span></a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
-                                            <a href="./about.html"><span>About Us</span></a>
-                                        </li>
+                                        <li class="menu-item"><a href="./blogs.html"><span>Blogs</span></a></li>
+                                        <li class="menu-item"><a href="./FAQs.html"><span>FAQs</span></a></li>
+                                        <li class="menu-item"><a href="./about.html"><span>About Us</span></a></li>
                                     </ul>
                                 </div>
                             </nav>
-
-                        </div><span class="copyright">© COPYRIGHT Pro-Researchers</span>
+                        </div>
+                        <span class="copyright">© COPYRIGHT Pro-Researchers</span>
                     </div>
                 </div>
             </div>
         </footer>
-    </div><a href="#top" onclick="smoothScrollToId('top', 500, 0); return false;" class="more-btn totop" id="top-btn"
-        rel="nofollow"><img src="./images/more-icon.svg" alt="" style="transform: rotate(180deg);"></a>
+    </div>
+    <a href="#top" onclick="smoothScrollToId('top', 500, 0); return false;" class="more-btn totop" id="top-btn"
+        rel="nofollow">
+        <img src="./images/more-icon.svg" alt="" style="transform: rotate(180deg);">
+    </a>
     <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/navigation.js?ver=1.0.0"
         id="ts-navigation-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/menu.js" id="menu-handler-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/totop.js" id="totop-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/svg-loader.js" id="svg-loader-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/scrolltoid.js" id="scroll-to-id-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/tsparticles/tsparticles.engine.min.js"
-        id="tsparticles-engine-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/tsparticles/tsparticles.all.bundle.min.js"
-        id="tsparticles-all-js"></script>
-    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/tsparticles-init.js"
-        id="tsparticles-loader-js"></script>
+    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/menu.js?ver=1.0.0" id="ts-menu-js"></script>
+    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/scroll-to-top.js?ver=1.0.0"
+        id="ts-scroll-to-top-js"></script>
+    <script src="https://gabriela.bar/wp-content/themes/ts/assets/js/svg.js?ver=1.0.0" id="ts-svg-js"></script>
+    <script>
+        let slideIndex1 = 0;
+        let slideIndex2 = 0;
+        let slideIndex3 = 0;
+        let slideShowInterval1, slideShowInterval2, slideShowInterval3;
 
+        function plusSlides(n, slideshow) {
+            if (slideshow === 1) {
+                clearInterval(slideShowInterval1);
+                showSlides(slideIndex1 += n, 1);
+                startSlideShow(1);
+            } else if (slideshow === 2) {
+                clearInterval(slideShowInterval2);
+                showSlides(slideIndex2 += n, 2);
+                startSlideShow(2);
+            } else if (slideshow === 3) {
+                clearInterval(slideShowInterval3);
+                showSlides(slideIndex3 += n, 3);
+                startSlideShow(3);
+            }
+        }
+
+        function showSlides(n, slideshow) {
+            let i;
+            let slides;
+            if (slideshow === 1) {
+                slides = document.getElementsByClassName("mySlides1");
+                if (n >= slides.length) { slideIndex1 = 0 }
+                if (n < 0) { slideIndex1 = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex1].style.display = "block";
+            } else if (slideshow === 2) {
+                slides = document.getElementsByClassName("mySlides2");
+                if (n >= slides.length) { slideIndex2 = 0 }
+                if (n < 0) { slideIndex2 = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex2].style.display = "block";
+            } else if (slideshow === 3) {
+                slides = document.getElementsByClassName("mySlides3");
+                if (n >= slides.length) { slideIndex3 = 0 }
+                if (n < 0) { slideIndex3 = slides.length - 1 }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex3].style.display = "block";
+            }
+        }
+
+        function startSlideShow(slideshow) {
+            if (slideshow === 1) {
+                slideShowInterval1 = setInterval(() => {
+                    plusSlides(1, 1);
+                }, 5000); // Change slide every 5 seconds
+            } else if (slideshow === 2) {
+                slideShowInterval2 = setInterval(() => {
+                    plusSlides(1, 2);
+                }, 5000); // Change slide every 5 seconds
+            } else if (slideshow === 3) {
+                slideShowInterval3 = setInterval(() => {
+                    plusSlides(1, 3);
+                }, 5000); // Change slide every 5 seconds
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showSlides(slideIndex1, 1);
+            startSlideShow(1);
+
+            showSlides(slideIndex2, 2);
+            startSlideShow(2);
+
+            showSlides(slideIndex3, 3);
+            startSlideShow(3);
+        });
+    </script>
 </body>
 
 </html>
